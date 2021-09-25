@@ -24,6 +24,19 @@
     <div id="mydiv" >Hello world</div>
     <script>
       //code here
+      //Grab element by ID and store it to q variable
+      let box = document.getElementById("mydiv");
+      //Use event listener to change the text when the mouse is 
+      //outside the box
+      box.addEventListener("mouseout", window.onload=function(){
+        //Set text of the box
+        box.textContent = "Hello World!"
+      })
+      //Use event listener to add changes when the mouse is over the box 
+      box.addEventListener("mouseover", window.onload=function(){
+        //Changes text to a new sentence
+        box.textContent = "Can I help you?"
+      })
     </script>
   </body>
 </html>

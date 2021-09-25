@@ -12,6 +12,18 @@
     </style>
     <script>
       /* TODO: write JS code here */
+      function change(){
+        let colors = ["blue", "red", "green", "blue"];
+        i = 0; //index
+        let elementToChange = document.getElementById("mydiv");
+        elementToChange.addEventListener("click", function(){
+          elementToChange.style.backgroundColor = colors[i++];
+          //checks to see if i has a greater number than the length
+          if(i >= colors.length){
+            i = 0;
+          }
+        })
+      }
 
     </script>
   </head>
